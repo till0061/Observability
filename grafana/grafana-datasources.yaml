@@ -11,7 +11,7 @@ datasources:
     derivedFields:
     # Field with external link.
     - datasourceUid: Tempo
-      matcherRegex: "(?:traceId) (\\w+)"
+      matcherRegex: "(?:traceId |trace_id=)(\\w+)"
       name: TraceID
       url: '$${__value.raw}'
 - name: Tempo
