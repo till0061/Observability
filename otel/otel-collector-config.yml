@@ -16,6 +16,7 @@ exporters:
       insecure: true
   loki:
     endpoint: http://loki:3100/loki/api/v1/push
+    format: json
     labels:
       attributes:
         container_name: ""
