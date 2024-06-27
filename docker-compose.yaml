@@ -2,7 +2,7 @@ version: "3"
 
 services:
   synthetic-load-generator:
-    image: omnition/synthetic-load-generator:1.0.29
+    image: albteo/synthetic-load-generator
     volumes:
       - ./synthetic-load-generator/load-generator.json:/etc/load-generator.json
     environment:
